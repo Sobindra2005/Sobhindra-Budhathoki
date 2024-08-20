@@ -4,6 +4,8 @@ import Mainintro from "@/components/mainIntro";
 import Education from "@/components/education";
 import Skill from "@/components/skill";
 import RecentWorks from "@/components/recentWorks";
+import Blogs from "@/components/Blogs";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -24,10 +26,16 @@ export default function Home() {
       </section>
 
 
-      <section id="recentWorks" className="bg-blue h-screen ">
+      <section id="recentWorks" className="bg-blue pb-[9rem]   ">
         <RecentWorks />
       </section>
-      <footer>
+
+      <section id="blogs" className=" h-screen bg-[#021b22]  p-3 ">
+        < Blogs />
+      </section>
+
+      <footer id="footer" className="bg-black ">
+        <Footer/>
       </footer>
     </>
   )

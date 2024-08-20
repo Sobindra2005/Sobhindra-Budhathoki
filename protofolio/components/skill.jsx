@@ -93,7 +93,7 @@ const datas = [
                 >
                   <img
                     src={skill.icon}
-                    alt={skill.name}
+                   
                     className="w-6 h-6 rounded-full object-center object-cover"
                   />
                   <span className="pl-2 text-md capitalize">{skill.name}</span>
