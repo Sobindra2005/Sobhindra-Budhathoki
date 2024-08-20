@@ -9,13 +9,13 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   return (
-    <nav className=" sticky top-0  border border-gray-500 lg:text-lg capitalize m-auto bg-black lg:w-[50rem] p-2 px-5  items-center  rounded-3xl">
+    <nav className="   border border-gray-500 lg:text-lg capitalize m-auto bg-black lg:w-[50rem] p-2 px-5  items-center rounded-xl ">
       <ul className="flex justify-between  text-gray-700">
-        <li className="cursor-pointer navBar hover:text-white ">home</li>
-        <li className="cursor-pointer navBar hover:text-white ">about</li>
-        <li className="cursor-pointer navBar hover:text-white ">
+        <a href="#home"> <li className=" cursor-pointer navBar hover:text-white ">home</li> </a>
+        <a href="#about"> <li className="cursor-pointer navBar hover:text-white ">about</li></a>
+        <a href="#recentWorks">  <li className="cursor-pointer navBar hover:text-white ">
           recent works
-        </li>
+        </li></a>
         <li className="cursor-pointer navBar hover:text-white ">blogs</li>
         <li className="cursor-pointer flex space-x-6  hover:text-white ">
           <span className="navBar">get in touch</span>
