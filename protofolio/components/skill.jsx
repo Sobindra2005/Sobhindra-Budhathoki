@@ -78,8 +78,8 @@ export default function Skill() {
   return (
     <div className="ml-[7rem] my-[8rem]">
       <h1 className="capitalize font-thin text-[30px]">
-        These are the technologies
-        <br /> that I've been using
+        {"These are the technologies"}
+        <br /> {"that I've been using"}
       </h1>
       <div className="flex w-full pl-[5rem] mt-12 space-x-9">
         {datas.map((data, index) => (
@@ -98,6 +98,7 @@ export default function Skill() {
                     src={skill.icon}
                     layout="Fill"
                     objectFit="cover"
+                    alt="skill images"
                     width={100}
                     height={100}
                   />
