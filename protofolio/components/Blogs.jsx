@@ -18,33 +18,33 @@ const blogPosts = [
     link: "/blogs/tailwind-css-guide",
   },
 ];
+
 export default function Blogs() {
   return (
     <div className="p-8">
       <h1 className="text-[36px] font-thin text-center mb-6">
         Latest Blog Posts
       </h1>
-      <div className=" flex-wrap space-x-16 flex justify-center mt-10 ">
+      <div className="flex flex-wrap justify-center gap-8 mt-10">
         {blogPosts.map((post, index) => (
           <div
             key={index}
-            className="border border-gray-700 rounded-lg shadow-lg shadow-gray-800 hover:border-blue-900 cursor-pointer hover:shadow-blue-900 overflow-hidden w-full sm:w-80"
+            className="border border-gray-700 rounded-lg shadow-lg shadow-gray-800 hover:border-blue-900 cursor-pointer hover:shadow-blue-900 overflow-hidden w-full min-[444px]:w-[300px] sm:w-[300px] md:w-[350px]"
           >
-            <div className="h-48 w-full  ">
+            <div className=" h-48 w-full">
               <Image
-                layout="responsive"
-                width={200}
-                height={200}
                 src={post.image}
                 alt={post.title}
-                className="  w-full h-48 object-cover object-center  rounded-md"
+                width={100}
+                height={100}
+                className=" h-48 w-full object-cover object-center rounded-t-md"
               />
             </div>
             <div className="p-4">
-              <h2 className="text-xl font-semibold leading-none ">
+              <h2 className="text-xl font-semibold leading-none">
                 {post.title}
               </h2>
-              <p className="text-gray-600 leading-tight ">{post.description}</p>
+              <p className="text-gray-600 leading-tight mt-2">{post.description}</p>
               <a
                 href={post.link}
                 className="text-blue-500 hover:underline mt-4 block"

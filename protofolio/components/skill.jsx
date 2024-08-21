@@ -76,18 +76,20 @@ const datas = [
 
 export default function Skill() {
   return (
-    <div className="ml-[7rem] my-[8rem]">
-      <h1 className="capitalize font-thin text-[30px]">
+    <div className="px-4 py-8 mx-auto max-w-4xl">
+      <h1 className="text-left text-[30px] font-thin capitalize mb-12">
         {"These are the technologies"}
         <br /> {"that I've been using"}
       </h1>
-      <div className="flex w-full pl-[5rem] mt-12 space-x-9">
+      <div className="flex flex-wrap justify-center gap-8">
         {datas.map((data, index) => (
           <div
             key={index}
-            className="border hover:border-violet-700 shadow-lg hover:shadow-violet-900 shadow-gray-800 cursor-pointer h-fit w-[13rem] rounded-md p-4 border-gray-700"
+            className="border border-gray-700 hover:border-violet-700 shadow-lg hover:shadow-violet-900 shadow-gray-800 cursor-pointer h-fit w-full max-w-[13rem] rounded-md p-4"
           >
-            <h1 className="text-xl text-gray-400">{data.category}</h1>
+            <h1 className="text-xl text-gray-400 text-center">
+              {data.category}
+            </h1>
             {data.skills.map((skill, skillIndex) => (
               <div
                 key={skillIndex}
@@ -96,11 +98,10 @@ export default function Skill() {
                 <div className="w-6 h-6 rounded-full ">
                   <Image
                     src={skill.icon}
-                    layout="Fill"
-                    objectFit="cover"
-                    alt="skill images"
-                    width={100}
-                    height={100}
+                    width={200}
+                    height={200}
+                    className="object-cover object-center"
+                    alt={`${skill.name} icon`}
                   />
                 </div>
                 <span className="pl-2 text-md capitalize">{skill.name}</span>
