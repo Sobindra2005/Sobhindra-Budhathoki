@@ -33,23 +33,30 @@ export default function Header() {
         </a>
         <li className="cursor-pointer flex space-x-6  hover:text-white ">
           <a href="#footer">
-          
             <span className="navBar">get in touch</span>
           </a>
 
           <div className="flex space-x-2">
-            <div className="cursor-pointer hover:text-white text-blue-400 ">
-              <FontAwesomeIcon icon={faLinkedin} />
-            </div>
-            <div className="cursor-pointer hover:text-white text-blue-400 ">
-              <FontAwesomeIcon icon={faFacebook} />
-            </div>
-            <div className="cursor-pointer hover:text-white text-gray-400 ">
-              <FontAwesomeIcon icon={faGithub} />
-            </div>
-            <div className="cursor-pointer hover:text-white text-gray-300 ">
-              <FontAwesomeIcon icon={faEnvelope} />
-            </div>
+            <a href="">
+              <div className="cursor-pointer hover:text-white text-blue-400 ">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </div>
+            </a>
+            <a href="https://www.facebook.com/sobindra.budhathoki">
+              <div className="cursor-pointer hover:text-white text-blue-400 ">
+                <FontAwesomeIcon icon={faFacebook} />
+              </div>
+            </a>
+            <a href="https://github.com/Sobindra2005">
+              <div className="cursor-pointer hover:text-white text-gray-400 ">
+                <FontAwesomeIcon icon={faGithub} />
+              </div>
+            </a>
+            <a href="mailto:sobhindra2005@gmail.com">
+              <div className="cursor-pointer hover:text-white text-gray-300 ">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </div>
+            </a>
           </div>
         </li>
       </ul>

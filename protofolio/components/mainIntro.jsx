@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export default function Mainintro() {
   return (
@@ -18,15 +18,24 @@ export default function Mainintro() {
             passion for exploring new technologies and transforming them into
             creative solutions.
           </div>
-          <div className='flex w-full justify-between '>
-         <button className='border border-gray-500 text-gray-400 p-1 px-2  hover:border-blue-900 rounded-full w-[48%] mt-2 hover:text-blue-800 '> <FontAwesomeIcon icon={faDownload} />  Download Cv</button>
-         <button className='border border-gray-500 p-1 px-2  rounded-full w-[48%] mt-2 text-gray-200 hover:border-blue-900 hover:text-blue-900 bg-slate-900'>  See Experience </button>
+          <div className="flex w-full justify-between ">
+            <button className="border border-gray-500 text-gray-400 p-1 px-2  hover:border-blue-900 rounded-full w-[48%] mt-2 hover:text-blue-800 ">
+              {" "}
+              <FontAwesomeIcon icon={faDownload} /> Download Cv
+            </button>
+            <button className="border border-gray-500 p-1 px-2  rounded-full w-[48%] mt-2 text-gray-200 hover:border-blue-900 hover:text-blue-900 bg-slate-900">
+              {" "}
+              See Experience{" "}
+            </button>
+          </div>
         </div>
-        </div>
-        <div>
-          <img
+        <div className="w-[17rem] h-[17rem] mr-[3rem]">
+          <Image
+               layout="responsive" 
+               width={200}
+               height={200}
             src="/images/profile-sob-inhance.png"
-            className="h-[15rem] mr-[4rem] "
+            className="object-cover object-center "
             alt="profile-pic"
           />
         </div>

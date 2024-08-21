@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 const projects = [
     {
       title: "Tournament Organizer",
       description: "The Tournament Organizing Platform is designed to facilitate the management and execution of tournaments and competitions.",
-      image: "images/Screenshot from 2024-08-20 20-38-06-1.png",
+      image: "/images/Screenshot from 2024-08-20 20-38-06-1.png",
       technologies: ["Next.js", "Tailwind css"],
       link: "https://project-one.example.com",
       repo: "https://github.com/user/project-one",
@@ -12,7 +14,7 @@ const projects = [
     {
       title: "IT_JOBS",
       description: "a platform for IT professionals to find job opportunities and for employers to post job openings.",
-      image: "images/Screenshot from 2024-08-20 20-19-02.png",
+      image: "/images/Screenshot from 2024-08-20 20-19-02.png",
       technologies: ["React.js", "MongoDB","Socket.io","express.js","Multer","Tailwind css",],
       link: "https://project-two.example.com",
       repo: "https://github.com/Sobindra2005/IT_JOBS",
@@ -32,7 +34,10 @@ const projects = [
               key={index}
               className="border  cursor-pointer  border-gray-700  rounded-lg shadow-lg shadow-gray-900 hover:shadow-blue-900 hover:border-blue-900 h-[28rem] p-4 w-full sm:w-80"
             >
-              <img
+              <Image
+                  layout="responsive" 
+                  width={200}
+                  height={200}
                 src={project.image}
                 alt={project.title}
                 className="w-full h-48 object-cover object-center  rounded-md"
