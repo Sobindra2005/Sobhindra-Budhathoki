@@ -24,10 +24,6 @@ const datas = [
         name: "Next.js",
         icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
       },
-      {
-        name: "Tailwind CSS",
-        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
-      },
     ],
   },
   {
@@ -74,14 +70,9 @@ const datas = [
         name: "Vercel",
         icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vercel/vercel-original.svg",
       },
-      {
-        name: "Docker",
-        icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
-      },
     ],
   },
 ];
-
 
 export default function Skill() {
   return (

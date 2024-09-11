@@ -7,7 +7,6 @@ import RecentWorks from "@/components/recentWorks";
 import Blogs from "@/components/Blogs";
 import Footer from "@/components/footer";
 
-
 export default function Home() {
   return (
     <>
