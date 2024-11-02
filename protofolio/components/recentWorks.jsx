@@ -30,6 +30,7 @@ const projects = [
     tags: ["Full-Stack"],
     status: "completed",
   },
+  
 ];
 
 export default function RecentWorks() {
