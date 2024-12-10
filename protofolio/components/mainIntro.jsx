@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import Image from "next/image"; // Importing Next.js Image component
+import Image from "next/image"; 
 
 export default function Mainintro() {
   return (
@@ -9,7 +9,7 @@ export default function Mainintro() {
       {/* Left Section */}
       <div className="flex flex-col items-start text-white space-y-6">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-          Hi, I'm{" "}
+         Hi, I&apos;m{" "}
           <span className="text-blue-500">Sobhindra Budhathoki!</span>
         </h1>
         <p className="text-gray-400 text-lg md:text-xl leading-relaxed max-w-lg">
