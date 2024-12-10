@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import Image from "next/image"; // Importing Next.js Image component
+import Image from "next/image"; 
 
 export default function Mainintro() {
   return (
