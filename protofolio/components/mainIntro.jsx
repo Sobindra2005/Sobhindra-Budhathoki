@@ -30,7 +30,7 @@ export default function Mainintro() {
         <Image
           width={300}
           height={300}
-          src="/images/profile-sob-inhance.png"
+          src="/images/f9603780-1942-4c14-af04-ebc5d1b523ad.jpg"
           className="object-cover object-center"
           alt="profile-pic"
         />
