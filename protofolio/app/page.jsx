@@ -1,11 +1,11 @@
-import Header from "@/components/header";
+import Header from '../components/header';
 import '@fortawesome/fontawesome-svg-core/styles.css';
-import Mainintro from "@/components/mainIntro";
-import Education from "@/components/education";
-import Skill from "@/components/skill";
-import RecentWorks from "@/components/recentWorks";
-import Blogs from "@/components/Blogs";
-import Footer from "@/components/footer";
+import Mainintro from "../components/mainIntro";
+import Education from "../components/education";
+import Skill from "../components/skill";
+import RecentWorks from "../components/recentWorks";
+import Blogs from "../components/Blogs";
+import Footer from "../components/footer";
 
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       </header>
       
       <div id="home" className="flex flex-col min-h-screen w-full p-5">
-        <section className="md:mt-[7rem] w-[97%] mx-auto">
+        <section className="md:mt-[7rem] lg:mt-[3rem] w-[97%] mx-auto">
           <Mainintro />
         </section>
       </div>
