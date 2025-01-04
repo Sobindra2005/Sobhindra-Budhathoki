@@ -19,7 +19,7 @@ export default function Mainintro() {
         </p>
         <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0 w-full sm:w-auto">
           <a
-            href="/Grey and White Clean Minimalist CV Resume.pdf"
+            href="/Sobhindra_budhathoki.pdf"
             download="Sobhindra_Budhathoki_CV.pdf"
           >
             <button className="flex items-center justify-center border border-gray-500 text-gray-400 hover:bg-blue-600 hover:text-white py-2 px-4 rounded-full w-full sm:w-auto">
