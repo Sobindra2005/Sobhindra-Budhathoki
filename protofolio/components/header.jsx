@@ -31,12 +31,6 @@ export default function Header() {
               recent works
             </li>
           </a>
-          
-          <a href="#gallery">
-            <li className="cursor-pointer navBar hover:text-white">
-              Gallery
-            </li>
-          </a>
 
           <li className="cursor-pointer flex space-x-6 hover:text-white">
             <a href="#footer">
