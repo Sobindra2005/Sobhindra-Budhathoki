@@ -32,13 +32,10 @@ export default function Home() {
         <RecentWorks />
       </section>
 
-      {/* Blogs Section */}
-      <section id="blogs" className=" w-full bg-[#021b22] p-3">
-        <Blogs />
-      </section>
+  
 
       {/* Footer Section */}
-      <footer id="footer" className=" w-full bg-black">
+      <footer id="footer" className=" w-full bg-[#021b22]">
         <Footer />
       </footer>
     </>

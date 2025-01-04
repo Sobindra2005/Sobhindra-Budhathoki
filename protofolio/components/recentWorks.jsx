@@ -1,4 +1,7 @@
+"use client"
+import { Link } from "lucide-react";
 import Image from "next/image";
+import { PiImageSquareThin } from "react-icons/pi";
 
 const projects = [
   {
@@ -7,7 +10,7 @@ const projects = [
       "The Tournament Organizing Platform is designed to facilitate the management and execution of tournaments and competitions.",
     image: "/images/Screenshot from 2024-08-20 20-38-06-1.png",
     technologies: ["Next.js", "Tailwind CSS"],
-    link: "https://project-one.example.com",
+    link: "#",
     repo: "https://github.com/user/project-one",
     tags: ["Full Stack"],
     status: "pending..",
@@ -25,12 +28,44 @@ const projects = [
       "Multer",
       "Tailwind CSS",
     ],
-    link: "https://project-two.example.com",
+    link: "#",
     repo: "https://github.com/Sobindra2005/IT_JOBS",
     tags: ["Full-Stack"],
     status: "completed",
   },
-  
+  {
+    title: "Agrosikshya",
+    description:
+      "A platform which connects farmers/agribussiness enthusiasts with experts along with well managed courses,map based crops suggestion,Financial Diary and Ask to Expert features",
+    image: "/images/Screenshot 2025-01-03 210049.png",
+    technologies: ["React", "Tailwind CSS", "MongoDB", "NARC api", "Express.js"],
+    link: "#",
+    repo: "https://github.com/Sobindra2005/IdeaX-2024.git",
+    tags: ["Full Stack", "Agriculture", "Ideax-2024"],
+    status: "completed",
+  },
+  {
+    title: "GymSite",
+    description:
+      "A platform for gym enthusiasts to find and book gym sessions, and for gym owners to manage their facilities and clients.",
+    image: "/images/Screenshot 2025-01-03 212447.png",
+    technologies: ["Next.js", "Tailwind CSS", "Strapi"],
+    link: "#",
+    repo: "https://github.com/Sobindra2005/gymsite.git",
+    tags: ["Static", "Fitness"],
+    status: "completed",
+  },
+  {
+    title: "Saras",
+    description:
+      "A food delivery platform that connects customers with gamifications and rewards along with the credit system for the payment.",
+    image: "/images/Screenshot_2024-12-31-05-43-33-46_f73b71075b1de7323614b647fe394240.webp",
+    technologies: ["React Native", "Node.js", "expo", "mongoDb"],
+    link: "#",
+    repo: "https://github.com/Sobindra2005/FoodApp.git",
+    tags: ["Mobile App", "Gamification", "Jiffy Hackanthon"],
+    status: "completed",
+  },
 ];
 
 export default function RecentWorks() {
@@ -55,7 +90,7 @@ export default function RecentWorks() {
               />
             </div>
             <div className="p-4">
-              <h2 className="text-xl mt-2">{project.title}</h2>
+              <h2 className="text-xl mt-2 flex justify-between">{project.title}<a href={`/project/${project.title}`} className="cursor-pointer p-2   hover:rounded-full hover:bg-gray-700  "><PiImageSquareThin /></a></h2>
               <p className="text-gray-600 text-sm leading-tight mt-2">
                 {project.description}
               </p>

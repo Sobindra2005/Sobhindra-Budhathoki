@@ -1,6 +1,7 @@
 import { Card, CardContent } from '../components/ui/card'
 import { Badge } from '../components/ui/badge'
 import { Briefcase, Calendar } from 'lucide-react'
+import { PiImageSquareThin } from 'react-icons/pi'
 
 const experiences = [
     {
@@ -29,17 +30,23 @@ const experiences = [
 
 const projects = [
     {
+        title: 'Jiffy Hackanthon 2024',
+        role: 'Backend Developer, Data fetching',
+        description: 'Contributed backend development  ensuring smooth integration with the expo.',
+        outcome: ' Successfully made it to Top 5',
+    },
+    {
         title: 'Datathon 2024',
         description: 'First hackathon experience; observed and learned from other participants. Focused on understanding the workflow of hackathons for future contributions.',
     },
     {
-        title: 'IdeaX Hackathon 2024',
+        title: 'MBMC IdeaX 2024',
         role: 'Backend Developer, Project Manager',
         description: 'Contributed backend development expertise, ensuring smooth integration with the frontend. Worked closely with team members to manage project timelines and deliverables.',
         outcome: 'Platform awarded Track Winner in Agritech for the innovative "Agro Sikshya" project.',
     },
     {
-        title: 'ASCOL IT Club Hackathon',
+        title: 'ASCOL Hackfest 2024',
         role: 'Team Leader, Backend Developer, Project Manager',
         description: 'Successfully led the team to complete a project within the stipulated timeline. Designed the backend architecture and contributed to project coordination.',
     }
@@ -96,7 +103,7 @@ export default function ExperienceTimeline() {
                     {projects.map((project, index) => (
                         <Card key={index} className="bg-gray-800 border-gray-700 hover:bg-gray-750 transition-colors duration-200">
                             <CardContent className="p-4 sm:p-6">
-                                <h3 className="text-lg sm:text-xl font-semibold mb-2">{project.title}</h3>
+                                <h3 className="text-lg sm:text-xl font-semibold mb-2 flex items-center justify-between">{project.title} <a href={`/Hackanthons/${project.title}`} className="cursor-pointer p-2   hover:rounded-full hover:bg-gray-700  "><PiImageSquareThin /></a></h3>
                                 {project.role && (
                                     <p className="text-gray-400 mb-2 text-sm sm:text-base">
                                         <strong>Role:</strong> {project.role}

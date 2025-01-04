@@ -31,16 +31,20 @@ export default function Header() {
               recent works
             </li>
           </a>
-          <a href="#blogs">
-            <li className="cursor-pointer navBar hover:text-white">blogs</li>
+          
+          <a href="#gallery">
+            <li className="cursor-pointer navBar hover:text-white">
+              Gallery
+            </li>
           </a>
+
           <li className="cursor-pointer flex space-x-6 hover:text-white">
             <a href="#footer">
               <span className="navBar">get in touch</span>
             </a>
 
             <div className="hidden md:flex space-x-2">
-              <a href="">
+              <a href="https://www.linkedin.com/in/sobhindra-budhathoki-146a5328b/">
                 <div className="cursor-pointer hover:text-white text-blue-400">
                   <FontAwesomeIcon icon={faLinkedin} />
                 </div>

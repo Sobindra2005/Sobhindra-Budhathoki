@@ -25,6 +25,10 @@ const datas = [
         icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg",
       },
       {
+        name: "TypeScript",
+        icon: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTesS2-HjTPHk96AEORqkIlhoqypQfHzYfLqw&s"
+      },
+      {
         name: "Tailwind CSS",
         icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
       },
@@ -56,7 +60,7 @@ const datas = [
     ],
   },
   {
-    category: "Tools",
+    category: "Others",
     skills: [
       {
         name: "Postman",
@@ -78,8 +82,21 @@ const datas = [
         name: "Docker",
         icon: "https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg",
       },
+      {
+        name: "strapi",
+        icon: "https://yt3.googleusercontent.com/frBWP24Yx3w3EVtQgB7-Z3KI46w272tn3ZCBbpHfaQutVnMHe49-fLutBRUgfP3hO9iQQYokkg=s900-c-k-c0x00ffffff-no-rj"
+      },
+      {
+        name: "C",
+        icon: "https://i.namu.wiki/i/KcqDuQYTxNpUcLIMZTg28QXse0XiWx1G7K68kYYCo1GuhoHmhB_V8Qe9odGGt0BH9-0nQZTN53WXTNpDmwVfWQ.svg"
+      },
+      {
+        name: "C++",
+        icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1200px-ISO_C%2B%2B_Logo.svg.png",
+      }
     ],
-  },
+
+  }
 ];
 
 
