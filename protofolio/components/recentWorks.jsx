@@ -45,17 +45,6 @@ const projects = [
     status: "completed",
   },
   {
-    title: "GymSite",
-    description:
-      "A platform for gym enthusiasts to find and book gym sessions, and for gym owners to manage their facilities and clients.",
-    image: "/images/Screenshot 2025-01-03 212447.png",
-    technologies: ["Next.js", "Tailwind CSS", "Strapi"],
-    link: "#",
-    repo: "https://github.com/Sobindra2005/gymsite.git",
-    tags: ["Static", "Fitness"],
-    status: "completed",
-  },
-  {
     title: "Saras",
     description:
       "A food delivery platform that connects customers with gamifications and rewards along with the credit system for the payment.",
