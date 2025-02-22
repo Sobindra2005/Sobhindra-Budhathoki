@@ -1,5 +1,4 @@
 "use client"
-import { Link } from "lucide-react";
 import Image from "next/image";
 import { PiImageSquareThin } from "react-icons/pi";
 
