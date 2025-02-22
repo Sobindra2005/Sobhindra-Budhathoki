@@ -5,18 +5,25 @@ import { PiImageSquareThin } from "react-icons/pi";
 
 const projects = [
   {
-    title: "Tournament Organizer",
+    title: "Saasential",
     description:
-      "The Tournament Organizing Platform is designed to facilitate the management and execution of tournaments and competitions.",
-    image: "/images/Screenshot from 2024-08-20 20-38-06-1.png",
-    technologies: ["Next.js", "Tailwind CSS"],
+      "platform that allows users to select website templates and customize them according to their needs.",
+    image: "/images/image.png",
+    technologies: [
+      "Next.js",
+      "TurboRepo",
+      "Multi-tenant",
+      "Monorepo",
+      "Tailwind CSS",
+    ],
     link: "#",
-    repo: "https://github.com/user/project-one",
-    tags: ["Full Stack"],
-    status: "pending..",
-  },
+    repo: "https://github.com/Sobindra2005/SaaSential",
+    tags: ["Full-Stack"],
+    status: "Currently working",
+  }
+  ,
   {
-    title: "IT_JOBS",
+    title: "Talent-Forge",
     description:
       "A platform for IT professionals to find job opportunities and for employers to post job openings.",
     image: "/images/Screenshot from 2024-08-20 20-19-02.png",
@@ -94,14 +101,14 @@ export default function RecentWorks() {
                 ))}
               </div>
               <div className="mt-2 flex flex-wrap gap-4">
-                <a
+                {/* <a
                   href={project.link}
                   className="text-blue-500 hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   View Project
-                </a>
+                </a> */}
                 <a
                   href={project.repo}
                   className="text-green-500 hover:underline"

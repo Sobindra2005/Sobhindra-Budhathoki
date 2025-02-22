@@ -32,8 +32,6 @@ export default function Home() {
         <RecentWorks />
       </section>
 
-  
-
       {/* Footer Section */}
       <footer id="footer" className=" w-full bg-[#021b22]">
         <Footer />
