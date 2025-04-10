@@ -5,9 +5,18 @@ import { PiImageSquareThin } from 'react-icons/pi'
 
 const experiences = [
     {
+    title: 'Junior JavaScript Developer',
+    company: 'Mystic Code Pvt. Ltd.',
+    duration: 'Feb 2025 - Present',
+    description: 'Building interactive 2D games using Phaser and Node.js. Collaborating closely with the development team to design game mechanics and ensure smooth gameplay. Actively participating in team discussions and code reviews to enhance project quality and delivery.',
+    type: 'Full-time',
+    location: 'Machhapokhari, Kathmandu, Bagmati, Nepal – On-site',
+    skills: ['Node.js', 'Phaser', '2D Game Development', 'Teamwork', 'Collaborative Development'],
+},
+    {
         title: 'Frontend Developer',
         company: 'Meerako Services Pvt. Ltd.',
-        duration: 'Sep 2024 - Present',
+        duration: 'Sep 2024 - Dec 2024',
         description: 'Developed dynamic and responsive frontend components using Next.js and TypeScript. Collaborated with the backend team to implement and test APIs.',
         type: 'Internship',
         location: 'Kathmandu, Bagmati, Nepal – On-site',
