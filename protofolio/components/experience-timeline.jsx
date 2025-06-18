@@ -39,6 +39,13 @@ const experiences = [
 
 const projects = [
     {
+        title: 'Hult Prize On-Campus @ ASCOL',
+        role: 'Team Leader, AR Developer (Unity)',
+        description: 'Led a team to develop an AR-based educational platform using Unity, designed to make learning more interactive and immersive through augmented reality.',
+        outcome: 'Secured 2nd position in the on-campus round',
+    }
+,    
+    {
         title: 'Jiffy Hackanthon 2024',
         role: 'Backend Developer, Data fetching',
         description: 'Contributed backend development  ensuring smooth integration with the expo.',
