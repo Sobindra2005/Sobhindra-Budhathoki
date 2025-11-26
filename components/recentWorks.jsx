@@ -35,10 +35,10 @@ const projects = [
     description:
       "A platform which connects farmers/agribussiness enthusiasts with experts along with well managed courses,map based crops suggestion,Financial Diary and Ask to Expert features",
     image: "/images/Screenshot 2025-01-03 210049.png",
-    technologies: ["React", "Tailwind CSS", "MongoDB", "NARC api", "Express.js"],
-    link: "#",
-    repo: "https://github.com/Sobindra2005/IdeaX-2024.git",
-    tags: ["Full Stack", "Agriculture"],
+    technologies: ["React", "NARC api", "Express.js" ,"GoogleGenAI","Leaflet","image based crop disease detection"],
+    link: "https://byte-mavericks.vercel.app/",
+    repo: "https://github.com/Sobindra2005/Byte-Mavericks-",
+    tags: ["Full Stack", "Agriculture","Hackathon"],
   },
 
 ];
