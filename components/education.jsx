@@ -27,6 +27,7 @@ const details = [
       "Currently pursuing a Bachelor of Science in Computer Science and Information Technology (BSc. CSIT) at Ascol, focusing on advanced topics in computing, software development, and information systems.",
   },
 ];
+
 export default function Education() {
   return (
     <div className="w-full max-w-[48rem]  p-3 mx-auto">

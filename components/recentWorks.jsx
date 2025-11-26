@@ -1,6 +1,7 @@
 "use client"
 import Image from "next/image";
 import { PiImageSquareThin } from "react-icons/pi";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 const projects = [
   {
@@ -10,34 +11,24 @@ const projects = [
     image: "/images/image.png",
     technologies: [
       "Next.js",
-      "TurboRepo",
-      "Multi-tenant",
-      "Monorepo",
       "Tailwind CSS",
+      "tanstack/react-query",
+      "openRouter ai API",
+      "grapejs studio"
     ],
-    link: "#",
+    link: "https://saa-sential.vercel.app/",
     repo: "https://github.com/Sobindra2005/SaaSential",
     tags: ["Full-Stack"],
-    status: "Currently working",
-  }
-  ,
+  },
   {
-    title: "Talent-Forge",
+    title: "Kripa Therapy",
     description:
-      "A platform for IT professionals to find job opportunities and for employers to post job openings.",
-    image: "/images/Screenshot from 2024-08-20 20-19-02.png",
-    technologies: [
-      "React.js",
-      "MongoDB",
-      "Socket.io",
-      "Express.js",
-      "Multer",
-      "Tailwind CSS",
-    ],
-    link: "#",
-    repo: "https://github.com/Sobindra2005/IT_JOBS",
-    tags: ["Full-Stack"],
-    status: "completed",
+      "A therapy consultation platform featuring online appointment booking, approval system, and real-time status tracking for patients and therapists.",
+    image: "/images/kripa.png",
+    technologies: ["React","appwrite"],
+    link: "https://kripatherapy.vercel.app/",
+    repo: "https://github.com/Sobindra2005/kripatherapy",
+    tags: ["Full-Stack", "Healthcare" ,"collaboration"],
   },
   {
     title: "Agrosikshya",
@@ -47,20 +38,9 @@ const projects = [
     technologies: ["React", "Tailwind CSS", "MongoDB", "NARC api", "Express.js"],
     link: "#",
     repo: "https://github.com/Sobindra2005/IdeaX-2024.git",
-    tags: ["Full Stack", "Agriculture", "Ideax-2024"],
-    status: "completed",
+    tags: ["Full Stack", "Agriculture"],
   },
-  {
-    title: "Saras",
-    description:
-      "A food delivery platform that connects customers with gamifications and rewards along with the credit system for the payment.",
-    image: "/images/Screenshot_2024-12-31-05-43-33-46_f73b71075b1de7323614b647fe394240.webp",
-    technologies: ["React Native", "Node.js", "expo", "mongoDb"],
-    link: "#",
-    repo: "https://github.com/Sobindra2005/FoodApp.git",
-    tags: ["Mobile App", "Gamification", "Jiffy Hackanthon"],
-    status: "completed",
-  },
+
 ];
 
 export default function RecentWorks() {
@@ -99,24 +79,25 @@ export default function RecentWorks() {
                   </span>
                 ))}
               </div>
-              <div className="mt-2 flex flex-wrap gap-4">
-                {/* <a
+              <div className="mt-4 flex gap-3">
+                <a
                   href={project.link}
-                  className="text-blue-500 hover:underline"
+                  className="flex items-center gap-1.5 text-blue-500 hover:text-blue-400 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Project
-                </a> */}
+                  <FiExternalLink className="w-4 h-4" />
+                  <span>Live Demo</span>
+                </a>
                 <a
                   href={project.repo}
-                  className="text-green-500 hover:underline"
+                  className="flex items-center gap-1.5 text-gray-400 hover:text-gray-300 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  View Code
+                  <FiGithub className="w-4 h-4" />
+                  <span>Source Code</span>
                 </a>
-                <span className="text-gray-500">{project.status}</span>
               </div>
               {project.tags && (
                 <div className="mt-2 flex flex-wrap gap-2">
